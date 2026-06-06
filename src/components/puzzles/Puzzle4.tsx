@@ -42,7 +42,7 @@ const Puzzle4 = () => {
     return () => {
       active = false;
     };
-  }, [channel, triggerHit, updateAppState]);
+  }, [appState.p4Attempt, channel, triggerHit, updateAppState]);
 
   const movePlayer = useCallback((dx: number, dy: number) => {
     if (!isHost || hitWall) return; // Only Luca controls, pause if hit
@@ -92,7 +92,7 @@ const Puzzle4 = () => {
   }, [movePlayer, isHost]);
 
   return (
-    <div className="w-full h-full flex flex-col p-4 font-mono relative min-h-[500px] items-center">
+    <div className="w-full h-full flex flex-col p-4 font-mono relative min-h-125 items-center">
       <div className="flex items-center gap-3 mb-4 w-full max-w-md pb-4 border-b border-zinc-800">
         {isHost ? <EyeOff className="text-zinc-500 w-5 h-5" /> : <Eye className="text-zinc-500 w-5 h-5" />}
         <span className="text-xs text-zinc-500 uppercase tracking-widest">

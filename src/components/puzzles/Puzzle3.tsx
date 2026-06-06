@@ -65,14 +65,14 @@ const Puzzle3 = () => {
   return (
     <div 
       ref={containerRef}
-      className="w-full h-[60vh] min-h-[400px] relative overflow-hidden bg-black rounded-xl border border-zinc-800 touch-none flex flex-col items-center justify-end p-6"
+      className="w-full h-[60vh] min-h-100 relative overflow-hidden bg-black rounded-xl border border-zinc-800 touch-none flex flex-col items-center justify-end p-6"
       onPointerMove={handlePointerMove}
       onPointerDown={handlePointerMove} // Also update on touch start
     >
       {/* Background layer for Luca (pure black, instructions only) */}
       {isHost && (
         <div className="absolute inset-0 flex items-center justify-center p-8 text-center pointer-events-none opacity-30">
-          <p className="text-zinc-500 font-mono text-sm max-w-[200px]">
+          <p className="text-zinc-500 font-mono text-sm max-w-50">
             Você tem a lanterna. Ilumine o caminho para a Mimi encontrar a resposta.
           </p>
         </div>

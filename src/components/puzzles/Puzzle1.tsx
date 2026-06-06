@@ -33,7 +33,7 @@ const Puzzle1 = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col p-6 font-mono relative min-h-[500px]">
+    <div className="w-full h-full flex flex-col p-6 font-mono relative min-h-125">
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -127,7 +127,7 @@ const Puzzle1 = () => {
               </div>
 
               {/* The Scanning Area */}
-              <div className="relative flex-1 min-h-[300px]">
+              <div className="relative flex-1 min-h-75">
                 <AnimatePresence>
                   {fragments.map((frag) => (
                     !foundFragments.includes(frag.id) && (

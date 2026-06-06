@@ -31,7 +31,7 @@ const Puzzle6 = () => {
     return () => {
       active = false;
     };
-  }, [channel]);
+  }, [appState.p6Attempt, channel]);
 
   const fail = () => {
     const nextAttempt = appState.p6Attempt + 1;
@@ -84,7 +84,7 @@ const Puzzle6 = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col p-6 font-mono min-h-[560px]">
+    <div className="w-full h-full flex flex-col p-6 font-mono min-h-140">
       <div className="flex items-center gap-3 mb-6 pb-4 border-b border-zinc-800">
         {isHost ? <Zap className="text-zinc-500 w-5 h-5" /> : <BookOpen className="text-zinc-500 w-5 h-5" />}
         <span className="text-xs text-zinc-500 uppercase tracking-widest">

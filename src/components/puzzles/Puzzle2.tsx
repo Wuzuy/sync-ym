@@ -48,7 +48,7 @@ const Puzzle2 = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col p-6 font-mono relative min-h-[500px]">
+    <div className="w-full h-full flex flex-col p-6 font-mono relative min-h-125">
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
