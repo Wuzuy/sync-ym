@@ -54,8 +54,8 @@ const Home = () => {
         <div className="mx-auto bg-zinc-800/50 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 border border-zinc-700">
           <Terminal className="text-pink-400 w-8 h-8" />
         </div>
-        <h1 className="text-2xl font-bold tracking-tight mb-2">Sync Protocol</h1>
-        <p className="text-zinc-400 text-sm mb-8">Establish a secure connection with your partner.</p>
+        <h1 className="text-2xl font-bold tracking-tight mb-2">Sync Puzzles</h1>
+        <p className="text-zinc-400 text-sm mb-8">Resolva quebra-cabeças em tempo real com a sua dupla.</p>
 
         <AnimatePresence>
           {displayError && (
